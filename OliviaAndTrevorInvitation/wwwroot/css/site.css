@@ -8,7 +8,7 @@ html, body {
   font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4 {
-  margin: 0px; }
+  margin-top: 0px; }
 
 .background {
   background-image: url("/images/wood.jpg"); }
@@ -41,13 +41,18 @@ h1, h2, h3, h4 {
         margin-bottom: 20px; } }
 
 .content-container {
-  background-color: rgba(255, 255, 255, 0.7);
-  text-align: center; }
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 15px; }
   @media only screen and (min-width: 768px) {
     .content-container {
       width: 80%;
       max-width: 920px;
       margin: 0px auto; } }
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 
 .galleryImage {
   height: auto;
