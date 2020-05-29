@@ -1,0 +1,113 @@
+﻿* {
+    box-sizing:border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin:0px;
+}
+
+.background {
+    background-image: url("/images/wood.jpg");
+}
+
+.mainBanner {
+    background-image: url("/images/IMG_8574.JPG");
+    background-position-y: 40%;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    display:flex;
+    //For Desktop
+    @media only screen and (min-width:768px) {
+        height: 100vh;
+        width: auto;
+        background-position-y: center;
+        
+    }
+
+    &Text {
+        padding:10px;
+        width:100%;
+        background-color: rgba(0,0,0,0.2);
+        align-self:flex-end;
+        color: white;
+        text-align:center;
+        margin-bottom:5px;
+        font-size:2em;
+
+        @media only screen and (min-width:768px) {
+            padding:15px;
+            font-size:4em;
+            margin-bottom:20px;
+        }
+    }
+}
+
+.content-container {
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    //For Desktop
+    @media only screen and (min-width:768px) {
+        width: 80%;
+        max-width: 920px;
+        margin: 0px auto;
+    }
+}
+
+
+
+.galleryImage {
+ height:auto;
+    width:100%;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.imageContainer {
+    height: 125px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+
+
+
+    @media screen and (min-width: 600px) {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    @media screen and (min-width: 928px) {
+        flex: 25%;
+        max-width: 25%;
+    }
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
