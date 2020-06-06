@@ -21,4 +21,8 @@
     <None Include="wwwroot\css\site.scss" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="start xcopy /E /I &quot;$(ProjectDir)\wwwroot&quot; &quot;$(SolutionDir)\docs&quot;" />
+  </Target>
+
 </Project>

@@ -1,0 +1,190 @@
+﻿* {
+    box-sizing:border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    @media only screen and (min-width:768px) {
+        font-size: 24px;
+    }
+}
+
+h1 {
+    font-size:3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight:300;
+}
+
+.background {
+    
+}
+
+.bannerNav {
+    display: none;
+
+    @media only screen and (min-width:768px) {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+        text-align: center;
+
+        a {
+            color: white;
+            cursor: pointer;
+            text-transform:lowercase;
+            font-size:0.8rem;
+            &:hover {
+                color: #66DD66;
+            }
+        }
+    }
+}
+
+.mainBanner {
+    background-image: url("../images/IMG_8574.JPG");
+    background-position-y: 40%;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    //For Desktop
+    @media only screen and (min-width:768px) {
+        height: 100vh;
+        width: auto;
+        background-position-y: center;
+        justify-content: space-between;
+    }
+
+    &Text {
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        color: white;
+        text-align: center;
+        margin-bottom: 5px;
+
+        @media only screen and (min-width:768px) {
+            padding: 15px;
+            font-size: 4rem;
+            margin-bottom: 0px;
+        }
+
+
+
+        h1, h2 {
+            font-weight: 200;
+
+            @media only screen and (min-width:768px) {
+                font-weight: 100;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+
+            @media only screen and (min-width:768px) {
+                font-size: 4rem;
+            }
+        }
+
+        h2 {
+            font-size: 0.9rem;
+
+            @media only screen and (min-width:768px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.container {
+}
+
+.content-container {
+    background-color: rgba(255,255,255, 1);
+    text-align: center;
+    padding:15px;
+    //For Desktop
+    @media only screen and (min-width:768px) {
+        width: 80%;
+        max-width: 920px;
+        margin: 12px auto 8px auto;
+    }
+}
+
+.detailsContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.galleryImage {
+ height:auto;
+    width:100%;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.imageContainer {
+    height: 125px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+
+
+
+    @media screen and (min-width: 600px) {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    @media screen and (min-width: 928px) {
+        flex: 25%;
+        max-width: 25%;
+    }
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
