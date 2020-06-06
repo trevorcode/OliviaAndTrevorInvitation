@@ -2,41 +2,63 @@
     ViewData["Title"] = "Olivia and Trevor";
 }
 
-<div class="background">
-    <div class="mainBanner">
-        <div class="mainBannerText">Trevor &amp; Olivia</div>
-    </div>
-    <div class="content-container">
-        <h2>Derek and Shannon Nightingale</h2>
-        <h3>Are pleased to announce the marriage of their daughter</h3>
-        <h1>Olivia Jane Nightingale</h1>
-        <h4>To</h4>
-        <h1>Trevor Jordan Spencer</h1>
-        <h3>son of</h3>
-        <h2>Tony and Stephanie Spencer</h2>
-        <h3>In the Ogden, Utah Temple</h3>
 
-        <h3>Please join us for a celebration to be held in their honor that evening</h3>
-        <hr />
-        <h1>Details</h1>
-        <div class="detailsContainer">
-            <div>
-                <h2>When</h2>
-                <h3>Aug | 1 | 2020</h3>
-                <h3>6pm - 8pm</h3>
-            </div>
-            <div>
-                <h2>Where</h2>
-                <h3>The Preisler Home</h3>
-                <h3>3033 N 425 E</h3>
-                <h3>North Ogden, UT 84414</h3>
+    <div class="mainBanner">
+        <div class="bannerNav">
+            <a onclick="scrollToHash('welcome')">Welcome</a> |
+            <a onclick="scrollToHash('details')">Details</a> |
+            <a onclick="scrollToHash('countdown')">Countdown</a> |
+            <a onclick="scrollToHash('gallery')">Gallery</a>
+        </div>
+        <div class="mainBannerText"><h1>Trevor &amp; Olivia</h1><h2>August 1 2019 | Ogden, UT</h2></div>
+    </div>
+    <div class="container" id="welcome">
+        <div class="content-container">
+            <h1>Welcome!</h1>
+            <p>You're invited! We'd love to see you!</p>
+            @*<h2>Trevor &amp; Olivia</h2>
+            <h3>Are pleased to announce the marriage of their daughter</h3>
+            <h1>Olivia Jane Nightingale</h1>
+            <h4>To</h4>
+            <h1>Trevor Jordan Spencer</h1>
+            <h3>son of</h3>
+            <h2>Tony and Stephanie Spencer</h2>
+            <h3>In the Ogden, Utah Temple</h3>*@
+
+            <h3>Please join us for a celebration to be held in their honor that evening</h3>
+            <hr />
+
+            
+
+
+        </div>
+    </div>
+    <div class="container" id="details">
+        <div class="content-container">
+            <h1>Details</h1>
+            <div class="detailsContainer">
+                <div>
+                    <h2>When</h2>
+                    <p>Aug | 1 | 2020</p>
+                    <p>6pm - 8pm</p>
+                </div>
+                <div>
+                    <h2>Where</h2>
+                    <p>The Preisler Home</p>
+                    <p>3033 N 425 E</p>
+                    <p>North Ogden, UT 84414</p>
+                </div>
             </div>
         </div>
-
-
+    </div>
+    <div class="container" id="countdown">
+        <div class="content-container">
+            <h1>Countdown</h1>
+            <h2 id="countDown"></h2>
+        </div>
     </div>
 
-    <div class="row">
+    <div class="row" id="gallery">
         <div class="column">
             <a href="~/images/IMG_8212.JPG"><img src="images/IMG_8212.JPG"></a>
             <img src="images/IMG_8363.JPG">
@@ -70,5 +92,3 @@
             <img src="images/IMG_8443.JPG">
         </div>
     </div>
-</div>
-
