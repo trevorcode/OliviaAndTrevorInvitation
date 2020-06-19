@@ -44,10 +44,10 @@ h1, h2, h3, h4 {
         text-transform: lowercase;
         font-size: 0.8rem; }
         .bannerNav a:hover {
-          color: #66DD66; } }
+          color: #99EE99; } }
 
 .mainBanner {
-  background-image: url("../images/IMG_8574.JPG");
+  background-image: url("../images/IMG_8574-1.JPG");
   background-position-y: 40%;
   width: 100%;
   height: 300px;
@@ -139,3 +139,20 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%; }
+
+.registryLinkContainer {
+  margin-top: 2rem;
+  padding: 1rem; }
+
+#registryLink {
+  border: 1px solid black;
+  padding: 1rem;
+  text-decoration: none;
+  color: #339933;
+  font-weight: 500;
+  transition: 0.5s ease; }
+  #registryLink:hover {
+    background-color: #99EE99; }
+  @media only screen and (min-width: 768px) {
+    #registryLink {
+      border: 2px solid black; } }
