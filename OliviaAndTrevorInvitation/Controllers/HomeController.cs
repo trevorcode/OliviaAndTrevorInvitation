@@ -20,7 +20,6 @@ namespace OliviaAndTrevorInvitation.Controllers
 
         public IActionResult Index()
         {
-
             return View();
         }
 
